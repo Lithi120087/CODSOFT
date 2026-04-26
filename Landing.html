@@ -1,1 +1,183 @@
-gi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        /* HEADER */
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #00c853;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: url("../assets/project2.png") no-repeat center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            background: #00c853;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* FEATURES */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .box {
+            width: 30%;
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #222;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h2>FitZone</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>Build Your Body, Shape Your Life</h1>
+        <p>Transform your body with our expert training programs</p>
+        <button class="btn">Join Now</button>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="box">
+        <h3>Workout Plans</h3>
+        <p>Custom workout plans for every goal</p>
+    </div>
+
+    <div class="box">
+        <h3>Nutrition Guide</h3>
+        <p>Healthy diet plans for better results</p>
+    </div>
+
+    <div class="box">
+        <h3>Personal Trainer</h3>
+        <p>Train with certified professionals</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        We provide the best fitness training programs to help you achieve your dream body.
+        Join us today and start your transformation journey.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: fitness@example.com</p>
+    <p>Phone: 9876543210</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FitZone | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
